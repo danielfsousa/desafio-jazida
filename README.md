@@ -1,9 +1,9 @@
 # Desafio Jazida.com
 [![Build Status](https://travis-ci.org/danielfsousa/desafio-jazida.svg?branch=master)](https://travis-ci.org/danielfsousa/desafio-jazida) [![Coverage Status](https://coveralls.io/repos/github/danielfsousa/desafio-jazida/badge.svg?branch=master)](https://coveralls.io/github/danielfsousa/desafio-jazida?branch=master)
 
-## URL
+## Documentação
 
-[**https://desafio-jazida.herokuapp.com**](https://desafio-jazida.herokuapp.com)
+[**https://desafio-jazida.herokuapp.com/documentacao**](https://desafio-jazida.herokuapp.com/documentacao)
 
 ## Requisitos
 
