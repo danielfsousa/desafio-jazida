@@ -11,7 +11,7 @@
   "scripts": {
     "precommit": "npm run lint",
     "prestart": "npm run docs",
-    "start": "cross-env NODE_ENV=production pm2 start ./src/index.js",
+    "start": "cross-env NODE_ENV=production node ./src/index.js",
     "predev": "npm run docs",
     "dev": "nodemon ./src/index.js",
     "lint": "eslint **/*.js --ignore-path .gitignore --ignore-pattern internals/scripts",
