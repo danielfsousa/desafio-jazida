@@ -119,6 +119,7 @@ describe('WeightedRandom', () => {
       mock.get();
 
       expect(spy).to.be.calledOnce;
+      spy.restore();
     });
 
     it('should return a random winner based on weights', () => {
