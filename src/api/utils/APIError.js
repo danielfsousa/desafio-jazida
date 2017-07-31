@@ -10,7 +10,6 @@ class ExtendableError extends Error {
     this.message = message;
     this.errors = errors;
     this.status = status;
-    this.isOperational = true; // This is required since bluebird 4 doesn't append it anymore.
     this.stack = stack;
   }
 }
