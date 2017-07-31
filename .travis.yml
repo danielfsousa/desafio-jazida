@@ -1,19 +1,21 @@
 language: node_js
 node_js: '8'
 cache: yarn
-
 git:
   depth: 3
-
 branches:
   only:
-    - master
-
+  - master
 env:
   global:
-    - NODE_ENV=test
-    - PORT=3000
-
+  - NODE_ENV=test
+  - PORT=3000
 script: yarn validate
-
 after_success: yarn coverage
+deploy:
+  provider: heroku
+  api_key:
+    secure: OcKn95RqshMZlyoE488QxG+hzqo7hYgItVEC9uaK/4R3yFiOFV6NQUGbI2dt7cY0ZmGWNewWre9zhTlfoaDV7vXvEebsvH88DKnh3dfNI66rplYNlFczt4EDdfriR884api80JxYY1lUal8GFG03i/meqDMI3YZB1XM5cUfi39LHNzRGErqFcSFiAoILiL0PfHeNF43AbBgA7W/YAw6GS/JlAg2Vf6AuZiH5PM0385HAQuMqlKtnaX3zdTi3mfd9vPNTkHXbWE5s54cXRr060WmLZ8MCVJnDvxn53T/2R3d9QONfALEadA0veaL/l3MJPsneNY3LjmFavpj4zvb+4epfPhHNA+Ee76fJliQrid5iE4iaF80f0pt3oeOApr3yJrNWwh5e8WumLkdqnL4+B4Bwe6tDbG4BC5QXgH/LU6xPHPD8Dilb2eXfuWHEEtV7VsVel1RDN5DlOqrA85Cpr/mGguRpnPAyh9Wj1S1cGunUc9qpoZfkp9xM+DsCsGExBxPUOnRzzDny1LvTHdQ3IvWC3+XhL6v+WbzXmbzRuXCkf70hQgxJ0pWx2mqa8Qjc16Sj7t/ULzT/OpmALNdJ0O2JnFEAjUlOztyPjdv60q1758bYu9PJsU0fqwpaTCdy+Fg4eDItEJpcYvjoVufaznp+VkbNf8Vza2J1DtURdUs=
+  app: desafio-jazida
+  on:
+    repo: danielfsousa/desafio-jazida
