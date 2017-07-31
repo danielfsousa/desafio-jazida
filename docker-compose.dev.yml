@@ -1,0 +1,4 @@
+version: "2"
+services:
+  desafio-jazida:
+    command: yarn dev -- -L
