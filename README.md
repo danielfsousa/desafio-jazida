@@ -40,8 +40,8 @@ npm run lint  # Analisa o código
 npm run lint:fix  # Analisa o código e tenta consertar automaticamente                                     
 npm run lint:watch  # Analisa o código e mantém a verificação de mudanças no código                                    
 npm run test:unit  # Inicia testes unitários                             
+npm run test:watch  # Inicia testes unitários e mantém a verificação de mudanças no código                                             
 npm run test:integration  # Inicia teste de integração                               
-npm run test:watch  # Inicia testes e mantém a verificação de mudanças no código                                             
 npm run validate  # Analisa o código e Inicia testes                                  
 npm run logs  # Lista todos os logs                                  
 npm run logs:error  # Lista logs com erros                            
